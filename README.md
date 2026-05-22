@@ -1,5 +1,5 @@
-# Email Address Aggregator
-* A full-stack application designed to aggregate/collect email addresses that is implemented in Rust 1.92.0.
+# Rust Collector
+* A full-stack application designed to quickly aggregate/collect email addresses that is implemented in Rust 1.92.0.
 
 ## Development Environment
 * Lenovo T14 Gen 6 (x86_64)
@@ -21,7 +21,7 @@
 # How to Run Locally
 1. Clone the repo
 ```
-git clone https://github.com/lucasthormann/rustfs.git
+git clone https://github.com/lucasthormann/rust-collector.git
 ```
 
 2. Start the container and run the PostgreSQL instance
