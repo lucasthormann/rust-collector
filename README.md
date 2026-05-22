@@ -1,6 +1,5 @@
 # Email Address Aggregator
-* A full-stack application designed to aggregate/collect email addresses
-  implemented in Rust 1.92.0.
+* A full-stack application designed to aggregate/collect email addresses that is implemented in Rust 1.92.0.
 
 ## Development Environment
 * Lenovo T14 Gen 6 (x86_64)
