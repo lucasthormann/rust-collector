@@ -77,7 +77,7 @@ async fn execute_query(
 #[launch]
 async fn rocket() -> _ {
     let (client, connection) = tokio_postgres
-        ::connect("host=postgres:postgres@db:5432/postgres user=postgres password=postgres dbname=postgres", NoTls).await
+        ::connect("host=localhost user=postgres password=postgres dbname=postgres", NoTls).await
         .expect("Failed to connect to Postgres");
 
     tokio::spawn(async move {
