@@ -15,7 +15,7 @@
 * Cargo 1.92.0 or newer
 
 ## Target Environment:
-* A bare-metal compute cluster of single-board computers (AArch64)
+* A bare-metal compute cluster composed of five single-board computers (AArch64)
 
 # How to Run Locally
 1. Clone the repo
