@@ -10,11 +10,13 @@
 ## Dependencies:
 * Git 2.43.0 or newer
 * Docker 28.2.2 or newer
-* Docker Compose v5.0.1 or newer
+* Docker Compose 5.0.1 or newer
 * Cargo 1.92.0 or newer
+* wasm32-uknown-uknown (WebAssembly compilation target)
+* Trunk 0.21.14
 
 ## Target Environment:
-* A bare-metal compute cluster composed of five single-board computers (AArch64)
+* A bare-metal compute cluster composed of five single-board computers (AArch64) running a Debian 13 instance
 
 # How to Run Locally
 1. Clone the repo
@@ -22,17 +24,17 @@
 git clone https://github.com/lucasthormann/rustfs.git
 ```
 
-2. Build the PostgreSQL container image
+2. Start the container and run the PostgreSQL instance
 ```
 docker compose up
 ```
 
-3. Step into the backend directory && build/run it
+3. Step into the backend directory && compile/run the package
 ```
 cd backend && cargo run
 ```
 
-4. Step into the frontend directory && build it
+4. Step into the frontend directory && compile the package
 ```
 cargo build --target wasm32-unknown-unknown
 ```
