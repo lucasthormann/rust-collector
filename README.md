@@ -1,5 +1,5 @@
 # Rust Collector
-* A full-stack application designed to quickly aggregate/collect email addresses that is implemented in Rust 1.92.0.
+* A full-stack application, designed for quick aggregation/collection of email addresses, that is implemented in Rust 1.92.0.
 
 ## Development Environment
 * Lenovo T14 Gen 6 (x86_64)
@@ -11,8 +11,8 @@
 * Git 2.43.0 or newer
 * Docker 28.2.2 or newer
 * Docker Compose 5.0.1 or newer
+* Rustup 1.28.2 or newer
 * Cargo 1.92.0 or newer
-* wasm32-uknown-uknown (WebAssembly 1.0 compilation target)
 * Trunk 0.21.14
 
 ## Target Environment:
@@ -29,17 +29,27 @@ git clone https://github.com/lucasthormann/rust-collector.git
 docker compose up
 ```
 
-3. Step into the backend directory & compile/run the package
+3. Install the WebAssembly 32-bit compilation target
+```
+rustup target add wasm32-unknown-unknown
+```
+
+4. Step into the backend directory & compile/run the package
 ```
 cd backend && cargo run
 ```
 
-4. Step into the frontend directory & compile the package to a WebAssembly module
+5. Step into the frontend directory & compile the package to a WebAssembly (1.0) module
 ```
 cargo build --target wasm32-unknown-unknown
 ```
 
-5. Use Trunk to build, bundle, & serve the GUI
+6. Use Trunk to build, bundle, & serve the GUI
 ```
 trunk serve
+```
+
+7. Access the application via a modern web browser using this URL
+```
+http://localhost:8080
 ```
