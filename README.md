@@ -24,7 +24,7 @@
 git clone https://github.com/lucasthormann/rust-collector.git
 ```
 
-2. Start the container and run the PostgreSQL instance
+2. Start the container and run the PostgreSQL instance within it
 ```
 docker compose up
 ```
@@ -34,19 +34,19 @@ docker compose up
 rustup target add wasm32-unknown-unknown
 ```
 
-4. Step into the backend directory & compile/run the package
+4. Step into the backend directory & compile then run the package
 ```
-cd backend && cargo run
+cd backend && cargo run --release
 ```
 
 5. Step into the frontend directory & compile the package to a WebAssembly (1.0) module
 ```
-cargo build --target wasm32-unknown-unknown
+cargo build --release --target wasm32-unknown-unknown
 ```
 
 6. Use Trunk to build, bundle, & serve the GUI
 ```
-trunk serve
+trunk serve --release
 ```
 
 7. Access the application via a modern web browser using this URL
