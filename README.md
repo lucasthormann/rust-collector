@@ -18,6 +18,10 @@
 ## Target Environment:
 * A bare-metal compute cluster composed of five single-board computers that contain the Broadcom BCM2711 SoC (AArch64) and are running a Debian (13.2) instance
 
+## Container Images:
+* Frontend: https://hub.docker.com/repository/docker/lucasthormann/k3s-rust-frontend/general
+* Backend: https://hub.docker.com/repository/docker/lucasthormann/k3s-rust-backend/general
+
 # How to Run Locally
 1. Clone the repo
 ```
